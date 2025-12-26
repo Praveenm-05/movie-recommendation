@@ -1,0 +1,255 @@
+.bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1c1c1e; /* Make sure it matches your theme */
+  z-index: 10; /* Keeps it above other content */
+  padding: 20px; /* Adjust as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-container {
+  padding-top: 90px; /* Adjust based on the height of .bar */
+}
+
+.app {
+  background-color: #f5d64e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 2000px;
+}
+.profile-button {
+  position: fixed;
+  margin-top: 7px;
+  margin-left: 5%;
+  background-color: #fdbb06f3;
+  border-radius: 8px;
+  border: 2px solid #755252;
+  
+}
+
+.profile-icon {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.profile-options {
+  position: absolute;
+  top: 110%;
+  right: -20px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 10px;
+  min-width: 150px;
+}
+
+.profile-options p,
+.profile-options button {
+  margin: 8px 0;
+  font-size: 1em;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #007bff;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 80px; /* Added margin-top to avoid overlap with the fixed title and search bar */
+}
+
+.bar{
+  position: fixed;
+  background-color: #969492;
+  margin-top: -2%;
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  display: block;
+}
+.gen{
+  color:rgb(228, 192, 33);
+}
+.genres-list {
+  width: 15%;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  top: 180px; /* Below the title and search bar */
+  background-color: #969492;
+  padding: 10px;
+  border-radius: 8px;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: -2px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.genres-list ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.genres-list li {
+  padding: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.genres-list li:hover {
+  background-color: #ddd;
+}
+
+.movies-container {
+  width: 68%;
+  margin-left: 110px;
+  padding: 3px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.movie-card {
+  background-color: #969492;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.movie-card img {
+  width: 80%;
+  border-radius: 8px;
+}
+
+
+.movie-card button {
+  margin-top: 10px;
+  background-color: #f5d64e;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: rgb(135, 143, 143);
+  cursor: pointer;
+}
+
+.movie-card button:hover {
+  background-color: #e7444f;
+}
+
+/* Fixed Title and Search Bar Styles */
+.title-search-container {
+  position: fixed;
+  top: 20px; /* Position at the top of the page */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-search-container h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #2c3e50; /* Dark color for title */
+  
+}
+
+.fo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.fo input {
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  width: 300px; /* Fixed width */
+  margin-right: 10px;
+  transition: border-color 0.3s;
+}
+
+.fo input:focus {
+  outline: none;
+  border-color: #ff4b5c;
+}
+
+.fo button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #ff4b5c;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.movie-wish{
+  margin-top: 120px;
+  width: 68%;
+  margin-left: 110px;
+  padding: 3px;
+  
+}
+.wish-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+}
+
+.wish-card {
+  
+  background-color: #969492;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: fit-content;
+}
+
+.wish-card img {
+  width: 50%;
+  border-radius: 8px;
+}
+
+
+.wish-card button {
+  margin-top: 10px;
+  background-color: #f5d64e;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: rgb(135, 143, 143);
+  cursor: pointer;
+}
+
+.wish-card button:hover {
+  background-color: #e7444f;
+}
+
+.fo button:hover {
+  background-color: #e7444f;
+}
+
+/* Movies Container Adjustment */
+.movies-container {
+  margin-top: 120px;
+   /* Added top margin to push the content below the fixed title and search bar */
+}  

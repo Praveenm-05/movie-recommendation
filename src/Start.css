@@ -1,0 +1,46 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center everything horizontally */
+    padding: 20px;
+    background-color: #f0f0f0; /* Background color for the entire page */
+  }
+  
+  .poster-marquee {
+    width: 100%;
+    overflow: hidden; /* Hides overflow content */
+    white-space: nowrap; /* Ensures items are in a single line */
+    position: relative; /* Needed for absolute positioning of the track */
+    height: 200px; /* Set a fixed height for the marquee */
+  }
+  
+  .poster-track {
+    display: inline-block; /* Allows the track to be treated as a single element */
+    animation: scrollPosters 30s linear infinite; /* Animation effect */
+  }
+  
+  @keyframes scrollPosters {
+    0% {
+      transform: translateX(10%); /* Start position */
+    }
+    50%{
+        transform: translateX(-10);
+    }
+    100% {
+      transform: translateX(-100%); /* Move left by the full width of the track */
+    }
+  }
+  
+  .poster {
+    display: inline-block; /* Keep posters inline */
+    margin-right: 0px; /* Remove space between posters */
+    padding: 10px;
+  }
+  
+  .poster img {
+    width: 120px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(187, 18, 18, 0.2); /* Shadow effect */
+  }
+  
